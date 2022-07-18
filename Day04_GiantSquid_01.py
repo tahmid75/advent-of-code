@@ -1,4 +1,4 @@
-def victory(board, move):
+def victory(board : int, move : int) -> bool:
     x = [[board[i][j] in move for j in range(5)] for i in range(5)]
     y = [[x[j][i] for j in range(5)] for i in range(5)]
     for i in range(5):
